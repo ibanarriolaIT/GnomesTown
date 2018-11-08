@@ -1,0 +1,10 @@
+<resources>
+   <string name="app_name">GnomesTown:</string>
+   <string name="age_label">Age:</string>
+   <string name="height_label">Height:</string>
+   <string name="weight_label">Weight:</string>
+   <string name="hair_label">Hair Color:</string>
+   <string name="professions_label">Professions:</string>
+   <string name="friends_label">Friends:</string>
+   <string name="error_getting_gnomes">No hemos podido encontrar a los gnomos</string>
+</resources>

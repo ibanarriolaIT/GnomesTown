@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="@dimen/scroll_bottom_padding"
+      android:layout_margin="@dimen/screen_border_margin">
+
+      <ImageView
+         android:id="@+id/Gnome_Photo"
+         android:layout_width="@dimen/detail_photo_size"
+         android:layout_height="@dimen/detail_photo_size"
+         android:layout_centerHorizontal="true" />
+
+      <TextView
+         android:id="@+id/Gnome_Name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Photo"
+         android:layout_centerHorizontal="true"
+         android:textSize="@dimen/name_title"
+         android:textStyle="bold" />
+
+      <TextView
+         android:id="@+id/Gnome_Age_Label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Name"
+         android:text="@string/age_label" />
+
+      <TextView
+         android:id="@+id/Gnome_Age"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Name"
+         android:layout_marginBottom="@dimen/distance_between_text"
+         android:layout_marginStart="@dimen/distance_between_text"
+         android:layout_toEndOf="@+id/Gnome_Age_Label" />
+
+      <TextView
+         android:id="@+id/Gnome_Weight_Label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Age"
+         android:text="@string/weight_label" />
+
+      <TextView
+         android:id="@+id/Gnome_Weight"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Age"
+         android:layout_marginBottom="@dimen/distance_between_text"
+         android:layout_marginStart="@dimen/distance_between_text"
+         android:layout_toEndOf="@+id/Gnome_Weight_Label" />
+
+      <TextView
+         android:id="@+id/Gnome_Height_Label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Weight"
+         android:text="@string/height_label" />
+
+      <TextView
+         android:id="@+id/Gnome_Height"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Weight"
+         android:layout_marginBottom="@dimen/distance_between_text"
+         android:layout_marginStart="@dimen/distance_between_text"
+         android:layout_toEndOf="@+id/Gnome_Height_Label" />
+
+      <TextView
+         android:id="@+id/Gnome_Hair_Label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Height"
+         android:text="@string/hair_label" />
+
+      <TextView
+         android:id="@+id/Gnome_Hair"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Height"
+         android:layout_marginBottom="@dimen/distance_between_text"
+         android:layout_marginStart="@dimen/distance_between_text"
+         android:layout_toEndOf="@+id/Gnome_Hair_Label" />
+
+      <View
+         android:id="@+id/First_Separator"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_below="@+id/Gnome_Hair"
+         android:background="@color/grey" />
+
+      <TextView
+         android:id="@+id/Gnome_Professions_Label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Hair"
+         android:layout_marginTop="@dimen/distance_between_text"
+         android:text="@string/professions_label"
+         android:textStyle="bold" />
+
+      <android.support.v7.widget.RecyclerView
+         android:id="@+id/Professions_List"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Professions_Label"
+         android:layout_marginBottom="@dimen/distance_between_text" />
+
+      <View
+         android:id="@+id/Second_Separator"
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:layout_below="@+id/Professions_List"
+         android:background="@color/grey" />
+
+      <TextView
+         android:id="@+id/Gnome_Friends_Label"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Professions_List"
+         android:layout_marginTop="@dimen/distance_between_text"
+         android:text="@string/friends_label"
+         android:textStyle="bold" />
+
+      <android.support.v7.widget.RecyclerView
+         android:id="@+id/Friends_List"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Gnome_Friends_Label" />
+   </RelativeLayout>
+</ScrollView>
